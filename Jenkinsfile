@@ -1,7 +1,7 @@
 pipeline {
     //agent {label 'linux'}
     agent any
-    }
+    
     stages {
         stage('Git Checkout') {
         steps {
