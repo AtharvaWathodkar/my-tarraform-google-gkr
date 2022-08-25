@@ -1,10 +1,6 @@
 pipeline {
     //agent {label 'linux'}
-    agent {
-        node {
-            any
-            customWorkspace '/tmp/myjenkinsnfs/my_workspace/my_terraform'
-        }
+    agent any
     }
     stages {
         stage('Git Checkout') {
