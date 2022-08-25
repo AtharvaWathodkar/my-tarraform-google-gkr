@@ -2,7 +2,7 @@ pipeline {
     //agent {label 'linux'}
     agent {
         node {
-            label 'Built-in Node'
+            any
             customWorkspace '/tmp/myjenkinsnfs/my_workspace/my_terraform'
         }
     }
