@@ -35,7 +35,7 @@ terraform {
 # ---------------------------------------------------------------------------------------------------------------------
 
 provider "google" {
-  credentials = var.Cred
+  credentials = "${file("burner-athwatho-c1f0dceaab60.json")}"
   project = var.project
   region  = var.region
 
