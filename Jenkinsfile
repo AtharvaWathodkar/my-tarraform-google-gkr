@@ -15,8 +15,8 @@ pipeline {
                 script {
                     try {
                         //echo "${my_env}"
-                        sh 'sudo terraform init'
-                        sh 'sudo terraform fmt'
+                        sh 'terraform init'
+                        sh 'terraform fmt'
                     } catch(Exception e) {
                         echo "Exception received" + e
                         } 
@@ -26,21 +26,21 @@ pipeline {
         }
         stage('Validate') {
             steps {
-                sh 'sudo terraform validate'
+                sh 'terraform validate'
                 
             }
         }
         stage('Plan') {
             steps {
                 
-                sh 'sudo terraform plan'
+                sh 'terraform plan'
             }
         }
         
         stage('Deployment') {
             steps {
                 
-                sh 'sudo terraform apply -auto-approve'
+                sh 'terraform apply -auto-approve'
               
             }
         }
