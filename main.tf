@@ -217,8 +217,7 @@ module "vpc_network" {
   name_prefix = "${var.cluster_name}-network-${random_string.suffix.result}"
   project     = var.project
   region      = var.region
-  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
-
+  
   cidr_block           = var.vpc_cidr_block
   secondary_cidr_block = var.vpc_secondary_cidr_block
 
