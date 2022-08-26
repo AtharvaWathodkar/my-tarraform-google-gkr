@@ -21,6 +21,12 @@ variable "region" {
   default     = "us-central1"
 }
 
+variable "Cred" {
+  description = "Service account to autherise"
+  type        = string
+  default     = "${file("burner-athwatho-c1f0dceaab60.json")}"
+}
+
 # ---------------------------------------------------------------------------------------------------------------------
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.

@@ -35,6 +35,7 @@ terraform {
 # ---------------------------------------------------------------------------------------------------------------------
 
 provider "google" {
+  credentials = var.Cred
   project = var.project
   region  = var.region
 

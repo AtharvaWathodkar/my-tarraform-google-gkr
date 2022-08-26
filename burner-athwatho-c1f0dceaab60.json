@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "burner-athwatho",
+  "private_key_id": "c1f0dceaab60c6cf67413d633d191e343ad111e0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC5q65UEnAbwgr1\n1Vw8jF8BzRO9eZung4N7yY6lzzu5WcHA0VDsBT5WXBkoka87xFfUQ9lagW6Nh5t8\nd1OWlcPe84/LJuqYmhY+2hnJn0/Liu75GBzdj+7jS2IwvvSgtoSxK3yXJfW+5+Mb\n3rOQQTzc8m6woylIMhzVEVAdW13kwD9B+i7Im3Xb90fO4PU/t72oqa4sYfL/QsXe\nQhvC7wxPnQl8D1yWvtrmsWoZvFIs3vDWrQM/SLXIKhaGZCKKBh+IpEppNV+0Sbtt\no/rLEKuMdi7pxbv69et3xcAs03Xxj8H4iUcp3HhbfCnyOSMjPxwam89Db5wPO0kg\n6TL6c/49AgMBAAECggEAHdxKkSLV/ODcOmUyDFrW/McqoZJpQiuYfdQQqQIHLOwO\niSAgz5SYTfNJ6IhlkkslhPHUhwXB7ekdTIs0WkeD1Nt/CMEdgaVmZn1VIGQKxUV2\n4YDLQ6beWJfLFuPfG+m+tW+0/eoQ9777e4P5hP24+B/VRXs4LHBCytGZ/N6w3xT1\n9ETnMDWH/5zk63eMbwMaQemPckLLePymLs/oPs/NYQcIRjqWl/7R1bVSouDiV3wU\n2+It+9KNzbB5jyvRa70SwgVdCtABpURAN8f50JPGNnYjcdbCCCjsCNtrmb5fdDl6\n0EA8d2010tiosLASJNjIjSywmdvRlhSsMgGNDtCU0QKBgQDd6sVjTlfChWLyFIHP\nlbY9I1kk/Y64m92pj2UyAbQ8Na/XV1dMWkQFapJWxfDkdZBe8H7nEsC83cyAwT4Y\nqPQxYoemHnld/6drIyGsdGsXvBUB1ZaABjbU4wwldkIjyxZSygwEyR63VLpi2zuU\nZ6inQ/Ss4Bgjo/OJ2FbQQsrHewKBgQDWL8oiHJc/Z/LBXZQZKo0tn76s17iQ3EBP\nOsxrfHGaWumRzyd6jopVhUY4VobO9TtsG3GWJn6bKAC5byJVFj/rpRa89vZiiXOk\n0GHRYqe+gd7xnw+Qs0pOAzO3JqKVzac3kVFUEWxPEFCa2idcrSNLmQb7XhXO1vgG\noFs5nM6HpwKBgQCO//T4HAizQW7UHeDUWl3XocqU6osobM/2rn+ALNbuoY3RDugj\nPFtuvhDUt7KWFSfV9dVgo5XtXmOkaGHSVDUfCaXtpt+Acfh5MmdFkLNd1QYYa4ES\nuG5m2nP+Q+k01W5qJOZ/wvX3HzMH9su6wt1MA59MMw97D/AkWHMAurmetwKBgQCN\nEirjLsubkn58R4NM1A7qduWid+7zUm31ATg0r2EvliNyyusouIt6am5mmu7tju3V\ndXnpuG75CG75s638NsxhC3ofedWr7vZBHpLe00jCnE1X/TjGSKBvI4LDZen+GtbB\nLbBQW61nocpFQ9xbGRo/J4pGs6BPfJ0d2C5dkt8gzwKBgQCLUVsQkAmpDSZ9sf2F\n08gHA9NA1LpJBqAdOaa4A3cnw6/UmI8XddN8tgM3RFzgtdOS6EVvaCLBL3mEXWgm\nCj+HiEEzqmsmzm0g4F5v+eYv3FCYBVEDIkeBNMm1QnA7RPBmcrQ63ZkAxOLXw+af\nMPaP8RBmsFzpZWpmTey2HCYiIA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "jenkins-master01@burner-athwatho.iam.gserviceaccount.com",
+  "client_id": "100594536419689287447",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jenkins-master01%40burner-athwatho.iam.gserviceaccount.com"
+}
