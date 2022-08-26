@@ -52,6 +52,7 @@ provider "google" {
 }
 
 provider "google-beta" {
+  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   project = var.project
   region  = var.region
 
@@ -100,7 +101,7 @@ module "gke_cluster" {
   # to a specific version of the modules, such as the following example:
   # source = "github.com/gruntwork-io/terraform-google-gke.git//modules/gke-cluster?ref=v0.2.0"
   source = "./modules/gke-cluster"
-
+  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   name = var.cluster_name
 
   project  = var.project
@@ -132,6 +133,7 @@ resource "google_container_node_pool" "node_pool" {
   name     = "main-pool"
   project  = var.project
   location = var.location
+  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   cluster  = module.gke_cluster.name
 
   initial_node_count = "1"
@@ -195,6 +197,7 @@ module "gke_service_account" {
 
   name        = var.cluster_service_account_name
   project     = var.project
+  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   description = var.cluster_service_account_description
 }
 
@@ -214,6 +217,7 @@ module "vpc_network" {
   name_prefix = "${var.cluster_name}-network-${random_string.suffix.result}"
   project     = var.project
   region      = var.region
+  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
 
   cidr_block           = var.vpc_cidr_block
   secondary_cidr_block = var.vpc_secondary_cidr_block
