@@ -23,7 +23,7 @@ locals {
 
 resource "google_container_cluster" "cluster" {
   provider = google-beta
-
+  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   name        = var.name
   description = var.description
 

@@ -11,6 +11,7 @@ terraform {
 resource "google_service_account" "service_account" {
   project      = var.project
   account_id   = var.name
+  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   display_name = var.description
 }
 
