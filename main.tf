@@ -101,7 +101,6 @@ module "gke_cluster" {
   # to a specific version of the modules, such as the following example:
   # source = "github.com/gruntwork-io/terraform-google-gke.git//modules/gke-cluster?ref=v0.2.0"
   source = "./modules/gke-cluster"
-  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   name = var.cluster_name
 
   project  = var.project
@@ -133,7 +132,6 @@ resource "google_container_node_pool" "node_pool" {
   name     = "main-pool"
   project  = var.project
   location = var.location
-  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   cluster  = module.gke_cluster.name
 
   initial_node_count = "1"
