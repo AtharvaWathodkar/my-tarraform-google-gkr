@@ -52,7 +52,6 @@ provider "google" {
 }
 
 provider "google-beta" {
-  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   project = var.project
   region  = var.region
 
@@ -195,7 +194,6 @@ module "gke_service_account" {
 
   name        = var.cluster_service_account_name
   project     = var.project
-  credentials = "${file("burner-athwatho-b1071eb83cc5.json")}"
   description = var.cluster_service_account_description
 }
 
