@@ -35,7 +35,6 @@ terraform {
 # ---------------------------------------------------------------------------------------------------------------------
 
 provider "google" {
-  credentials = "${file("burner-athwatho-f20329def842.json")}"
   project = var.project
   region  = var.region
 
@@ -146,8 +145,8 @@ resource "google_container_node_pool" "node_pool" {
   }
 
   node_config {
-    image_type   = "COS"
-    machine_type = "n1-standard-1"
+    image_type   = "cos_containerd"
+    machine_type = "e2-small"
 
     labels = {
       all-pools-example = "true"
