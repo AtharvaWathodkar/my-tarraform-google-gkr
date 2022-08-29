@@ -1,6 +1,11 @@
 pipeline {
     //agent {label 'linux'}
     agent any
+     environment {
+                
+                GOOGLE_PROJECT_ID = 'burner-athwatho'
+     }
+
     
     stages {
         stage('Git Checkout') {
@@ -32,15 +37,19 @@ pipeline {
         }
         stage('Plan') {
             steps {
-                
-                sh 'terraform plan'
+                withCredentials([file(credentialsId: 'secret-file', variable: 'gcp-key')]) {
+                    sh("gcloud auth activate-service-account --key-file=${gcp-key}")
+                    sh("gcloud config set project ${GOOGLE_PROJECT_ID}")
+                    sh("terraform plan")
+                    sh("terraform apply -auto-approve")
+                }
             }
         }
         
         stage('Deployment') {
             steps {
                 
-                sh 'terraform apply -auto-approve'
+                echo 'deployed'
               
             }
         }
