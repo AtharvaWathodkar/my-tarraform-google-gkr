@@ -70,7 +70,10 @@ provider "google-beta" {
 data "google_client_config" "client" {}
 
 # Use this datasource to access the Terraform account's email for Kubernetes permissions.
-data "google_client_openid_userinfo" "terraform_user" {}
+data "google_client_openid_userinfo" "terraform_user" {
+
+  email  = "jeniks@burner-athwatho.iam.gserviceaccount.com"
+}
 
 provider "kubernetes" {
 
