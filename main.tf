@@ -73,6 +73,7 @@ data "google_client_config" "client" {}
 data "google_client_openid_userinfo" "terraform_user" {
 
   email  = "jeniks@burner-athwatho.iam.gserviceaccount.com"
+  scopes = ["https://www.googleapis.com/auth/cloud-platform"]
 }
 
 provider "kubernetes" {
