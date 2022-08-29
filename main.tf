@@ -62,7 +62,7 @@ provider "google-beta" {
     "https://www.googleapis.com/auth/devstorage.full_control",
 
     # Required for google_client_openid_userinfo
-    "https://www.googleapis.com/auth/userinfo.email",
+    #"https://www.googleapis.com/auth/userinfo.email",
   ]
 }
 
@@ -70,7 +70,7 @@ provider "google-beta" {
 data "google_client_config" "client" {}
 
 # Use this datasource to access the Terraform account's email for Kubernetes permissions.
-data "google_client_openid_userinfo" "terraform_user" {}
+#data "google_client_openid_userinfo" "terraform_user" {}
 
 provider "kubernetes" {
 
