@@ -37,7 +37,7 @@ pipeline {
         }
         stage('Plan') {
             steps {
-                withCredentials([file(credentialsId: 'gcp-mykey', variable: 'GCP_KEY')]) {
+                withCredentials([file(credentialsId: 'gcp-key', variable: 'GCP_KEY')]) {
                     sh("gcloud auth activate-service-account --key-file=${GCP_KEY}")
                     sh("gcloud config set project ${GOOGLE_PROJECT_ID}")
                 }
