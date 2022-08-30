@@ -41,8 +41,8 @@ pipeline {
                     sh("gcloud auth activate-service-account --key-file=${GCP_KEY}")
                     sh("gcloud config set project ${GOOGLE_PROJECT_ID}")
                 }
-                    sh("terraform plan")
-                    sh("terraform apply -auto-approve")
+                    sh("sudo terraform plan")
+                    sh("sudo terraform apply -auto-approve")
                 
             }
         }
