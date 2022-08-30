@@ -46,7 +46,7 @@ provider "google" {
     "https://www.googleapis.com/auth/devstorage.full_control",
 
     # Required for google_client_openid_userinfo
-    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile",
   ]
 }
 
@@ -62,7 +62,7 @@ provider "google-beta" {
     "https://www.googleapis.com/auth/devstorage.full_control",
 
     # Required for google_client_openid_userinfo
-    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile",
   ]
 }
 
