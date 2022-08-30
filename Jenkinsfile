@@ -20,6 +20,7 @@ pipeline {
                 script {
                     try {
                         //echo "${my_env}"
+                        sh 'sudo gcloud components install kubectl'
                         sh 'terraform init'
                         sh 'terraform fmt'
                     } catch(Exception e) {
