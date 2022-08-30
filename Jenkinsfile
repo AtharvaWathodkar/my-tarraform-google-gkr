@@ -20,7 +20,7 @@ pipeline {
                 script {
                     try {
                         //echo "${my_env}"
-                        sh 'sudo yum install kubectl'
+                        sh 'sudo yum install kubectl -y'
                         sh 'terraform init'
                         sh 'terraform fmt'
                     } catch(Exception e) {
