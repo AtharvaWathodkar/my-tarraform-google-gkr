@@ -37,7 +37,7 @@ terraform {
 provider "google" {
   project = var.project
   region  = var.region
-  credentials = "${file("burner-athwatho-df33c4f74e27.json")}"
+  
 
   scopes = [
     # Default scopes
@@ -54,7 +54,7 @@ provider "google" {
 provider "google-beta" {
   project = var.project
   region  = var.region
-  credentials = "${file("burner-athwatho-df33c4f74e27.json")}"
+  
   
   scopes = [
     # Default scopes
