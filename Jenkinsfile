@@ -49,6 +49,7 @@ pipeline {
                 
                 echo 'deployed'
                 sh("sudo kubectl get all")
+                sh 'export NGINX_SERVICE_IP=$(sudo kubectl get -o jsonpath="{.status.loadBalancer.ingress[0].ip}" services nginx);curl -kv http://${NGINX_SERVICE_IP}'
               
             }
         }
