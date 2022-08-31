@@ -48,6 +48,7 @@ pipeline {
             steps {
                 
                 echo 'deployed'
+                sh("sudo kubectl get all")
               
             }
         }
